@@ -6,8 +6,11 @@
 //  Copyright © 2019 PrototypeC. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-open class DemoCustomView {
-    
+open class DemoCustomView: UIView {
+    public convenience init() {
+        self.init()
+        self.backgroundColor = UIColor.red
+    }
 }
