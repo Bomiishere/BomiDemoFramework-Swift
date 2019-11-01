@@ -10,7 +10,7 @@ import UIKit
 
 open class DemoCustomView: UIView {
     
-    init(with color: UIColor) {
+    public init(with color: UIColor) {
         super.init(frame: .zero)
         self.backgroundColor = color
     }
