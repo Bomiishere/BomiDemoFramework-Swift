@@ -9,8 +9,17 @@
 import UIKit
 
 open class DemoCustomView: UIView {
+    
+    init(with color: UIColor) {
+        super.init(frame: .zero)
+        self.backgroundColor = color
+    }
+    
     public convenience init() {
-        self.init()
-        self.backgroundColor = UIColor.red
+        self.init(with: UIColor.red)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
